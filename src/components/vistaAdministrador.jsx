@@ -140,7 +140,8 @@ function VistaAdministrador() {
 
   const confirmarBorrarLocalStorage = () => {
     localStorage.clear();
-    window.location.reload();
+    setDatosParaAdmin([]);
+    setMostrarEliminarAlerta(false);
   };
 
   const handleCerrarAlerta = () => {
