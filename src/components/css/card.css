@@ -11,17 +11,18 @@
     text-align: center;
     border: black 5px none;
     box-shadow: 4px 4px 15px  #252525;
-    ;
     overflow: auto;
     font-family: roboto;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 #operarioId{
     /* font-size: 48px;  Esto es una prueba el original son 48px */
-    font-size: 48px;
+    font-size: 40px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    overflow: hidden;
 }
 #locationData{
     background-color: #6CA7D2;

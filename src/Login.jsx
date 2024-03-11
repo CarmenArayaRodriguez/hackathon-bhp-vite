@@ -7,8 +7,9 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { BasicTextFields, BasicPassword, BasicButtons } from './ComponentesLogin';
 import BhpHeader from './components/jsx/bhp-header';
+import { Link } from 'react-router-dom';
+import "./Login.css"
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
@@ -67,8 +68,9 @@ export default function AlertDialog() {
   };
 
   return (
-    <div>
+    <div id="extraContainer">
       <BhpHeader />
+      <main id="mainLogin">
       <section className='login-form'>
         <h1 className='H1'>Iniciar sesión</h1>
         <form onSubmit={handleSubmit}>
@@ -95,6 +97,7 @@ export default function AlertDialog() {
           </DialogActions>
         </Dialog>
       </section>
+      </main>
     </div>
   );
 }
