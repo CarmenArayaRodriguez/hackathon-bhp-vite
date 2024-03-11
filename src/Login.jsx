@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BasicTextFields, BasicPassword, BasicButtons } from './ComponentesLogin';
 import BhpHeader from './components/jsx/bhp-header';
 import { Link } from 'react-router-dom';
+import "./Login.css";
 
 
 function BasicForm() {
@@ -43,18 +44,20 @@ function BasicForm() {
   };
 
   return (
-    <div>
+    <div id="extraContainer">
       <BhpHeader />
+      <main id="mainLogin">
       <section className='login-form'>
         <h1 >Iniciar sesión</h1>
         <form onSubmit={handleSubmit}>
           <BasicTextFields value={username} onChange={handleUsernameChange} />
           <BasicPassword value={password} onChange={handlePasswordChange} />
           <Link to="/subirArchivo">
-            <BasicButtons onClick={handleClick}>Texto del botón</BasicButtons>
+            <BasicButtons onClick={handleClick} id="btnLogin">Texto del botón</BasicButtons>
           </Link>
         </form>
       </section>
+      </main>
     </div>
 
 

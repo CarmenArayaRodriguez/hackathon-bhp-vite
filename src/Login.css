@@ -1,6 +1,8 @@
 /* LoginForm.css */
 body{
   font-family: roboto;
+  margin:0px;
+  padding:0px;
   
 }
 
@@ -9,7 +11,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 50vh; /* Esto asegura que el contenedor ocupe toda la altura de la ventana */
-
     margin:100px;
 
   }
@@ -30,6 +31,10 @@ body{
     box-shadow: 0 0 10px #252525;
     width: 500px;
     margin-top: 0 0 100px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
   }
   
   
@@ -38,3 +43,19 @@ body{
     margin-bottom: 1.2rem;
   }
  
+  #extraContainer{
+    margin:0px;
+    padding: 0px;
+
+  }
+
+  #mainLogin{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding:100px;
+  }
+
+  #btnLogin{
+    margin-bottom: 1rem;
+  }

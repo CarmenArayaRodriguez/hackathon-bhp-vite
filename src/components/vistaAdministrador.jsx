@@ -54,7 +54,7 @@ function VistaAdministrador() {
   const [page, setPage] = useState(0); // Estado para la página actual
   const [rowsPerPage, setRowsPerPage] = useState(15); // Estado para el número de filas por página
   const [datosParaAdmin, setDatosParaAdmin] = useState([]);
-  const [mostrarModal, setMostrarModal] = useState(false);
+  //const [mostrarModal, setMostrarModal] = useState(false);
   const [fechaActual, setFechaActual] = useState(localStorage.getItem("fecha"));
   const [horaActual, setHoraActual] = useState(localStorage.getItem("hora"));
   const [mostrarAlerta, setMostrarAlerta] = useState(false);
@@ -207,7 +207,7 @@ function VistaAdministrador() {
           }}
         />
       </article>
-      <StyledTableContainer>
+      <StyledTableContainer style={{width:'70%', margin:'0auto'}}>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 700 }} aria-label="customized table">
             <TableHead>
@@ -299,11 +299,8 @@ function VistaAdministrador() {
           </DialogContent>
           <DialogActions>
             <Button onClick={handleCancelarPublicar} variant='filled' >Cancelar</Button>
-            <Button onClick={handleConfirmarPublicar} autoFocus sx={{
-              backgroundColor: '#F77F00', color: '#ffffff', '&:hover': {
-                backgroundColor: '#814504'
-              },
-            }} >Confirmar</Button>
+            <Button onClick={handleConfirmarPublicar} autoFocus sx={{ backgroundColor: '#F77F00', color: '#ffffff', '&:hover': {
+      backgroundColor: '#814504'}, }} >Confirmar</Button>
           </DialogActions>
         </Dialog>
       </section>
