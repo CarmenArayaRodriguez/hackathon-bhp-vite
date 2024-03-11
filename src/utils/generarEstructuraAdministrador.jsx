@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 export const generarEstructuraAdministrador = (contenidoTxt) => {
   const lineas = contenidoTxt.split('\n').filter(linea => linea.trim() !== '' && !linea.includes('Oper Alineado'));
 

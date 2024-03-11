@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable no-unused-vars */
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import BhpHeader from './jsx/bhp-header';
 import { styled } from '@mui/material/styles';
@@ -71,7 +72,7 @@ function VistaAdministrador() {
     }
   }, []);
 
-  
+
   //Función para paginación
   const handleChangePage = (event, newPage) => { // Manejador de cambio de página
     setPage(newPage);
@@ -298,8 +299,11 @@ function VistaAdministrador() {
           </DialogContent>
           <DialogActions>
             <Button onClick={handleCancelarPublicar} variant='filled' >Cancelar</Button>
-            <Button onClick={handleConfirmarPublicar} autoFocus sx={{ backgroundColor: '#F77F00', color: '#ffffff', '&:hover': {
-      backgroundColor: '#814504'}, }} >Confirmar</Button>
+            <Button onClick={handleConfirmarPublicar} autoFocus sx={{
+              backgroundColor: '#F77F00', color: '#ffffff', '&:hover': {
+                backgroundColor: '#814504'
+              },
+            }} >Confirmar</Button>
           </DialogActions>
         </Dialog>
       </section>
