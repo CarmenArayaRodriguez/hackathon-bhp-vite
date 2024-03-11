@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 // Componentes MUI
+import React from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -52,11 +52,12 @@ function BasicPassword({ value, onChange }) {
   );
 }
 
+
 function BasicButtons({ onSubmit, onClick }) {
   return (
     <Stack alignItems="center" justifyContent="center" spacing={2} direction="row">
       <Button
-        className='btnIngresar'
+        classname='BtnSubmit'
         type='submit'
         variant="contained"
         style={{ background: "#252525", color: "white", border: '2px dashed black', width: '40ch' }}
@@ -66,5 +67,6 @@ function BasicButtons({ onSubmit, onClick }) {
     </Stack>
   );
 }
+
 
 export { BasicPassword, BasicTextFields, BasicButtons };
