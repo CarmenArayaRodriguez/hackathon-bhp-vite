@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../css/bhp-header.css';
 
 function BhpHeader({ fecha, hora, mostrarMensaje }) {
